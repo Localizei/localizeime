@@ -50,7 +50,7 @@ $(document).ready(function(){
         var request = {
              location: lat_lon,
               radius: 5000,
-            types: ['hospital', 'pharmacy', 'doctor', 'dentist']
+            types: ['hospital', 'pharmacy', 'doctor', 'dentist', 'clinical']
         };
         var places_service = new google.maps.places.PlacesService(map);
         places_service.search(request,loadPlacesSaude);
@@ -108,7 +108,7 @@ function get_location(){
     if(Modernizr.geolocation){
         navigator.geolocation.getCurrentPosition(show_map);
     }else{
-        $('#map').html('<p>Your browser does not support geo-location</p>');
+        $('#map').html('<p>Seu navegador não suporta geo-localização!</p>');
     }
 }
 
@@ -138,7 +138,7 @@ function show_map(position){
       position: lat_lon, 
       map: map, 
       icon: home_image,
-      title:"You are here!",
+      title:"Você está aqui!",
       animation: google.maps.Animation.BOUNCE
   });   
 }

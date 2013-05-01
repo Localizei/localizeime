@@ -1,6 +1,6 @@
 {
   "manifest_version": 2,
-  "name": "Localizei Beta",
+  "name": "Localizei.me",
   "version": "0.2",
   "permissions": ["webview", "geolocation"],
   "app": {
@@ -8,6 +8,6 @@
       "scripts": ["main.js"]
     }
   },
-  "icons": { "16": "16x16.jpg", "128": "128x128.jpg" }
+  "icons": { "16": "img/16x16.jpg", "128": "img/128x128.jpg" }
 
 }
